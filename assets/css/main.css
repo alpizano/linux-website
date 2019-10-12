@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+	background-color: #FAFAFA;
+	display: grid;
+	justify-items: center; /* centers on x-axis */
+	align-items: center; /* center on y-axis */
+	grid-template-rows: auto;
+	grid-template-columns: ;
+	width: 100vw; /* need 100vw to center body div */
+	height: 100vh; /* need 100vh to center body div */
+	grid-template-areas:
+}
+
+.wrapper {
+	justify-items: ; /* centers elements inside wrapper */
+	max-width: ;
+	display: grid;
+	background-color: ;
+	grid-template-rows: ;
+	grid-template-columns: ;
+	grid-template-areas:
+	"section"
+	"nav";
+}
+
+nav {
+	padding-top: 2rem; /* perfect - does not move main container */
+	grid-area: nav;
+	/*width: 50%;*/
+}
+
+aside {
+	display: none;
+}
+
+
+section {
+	grid-area: section;
+}
+
+
+
+h1 {
+	background-color: ;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #393939;
+	margin: 0 0.35em 0 0.35em;
+	/*padding: 0 0 10px 0;*/
+}
+
+.name {
+	font-weight: 400;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 300;
+	color: #393939;
+	line-height: 30px;
+	margin: 1.4em 1em 0 1em;
+}
+
+i {
+	font-style: italic;
+}
+
+ul {
+
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+.top-menu {
+	margin: 0 1rem 0 1rem;
+	background-color: ;
+	text-align: center; /* centers the nav bar */
+	/*margin: 25px 0px -25px 0px; /* if you increase bottom, you must decrease top */
+}
+
+
+.top-menu li {
+	padding-right: 1em;
+}
+
+.top-menu li a {
+	font-family: 'Roboto Condensed', sans-serif;
+	/*font-family: 'Hind', sans-serif;*/
+	/*font-family: 'Raleway', sans-serif;*/
+	background-color: ;
+	padding:  ;
+	display: ;
+	font-size: 1.1rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	color: #085317;
+	padding-bottom: 6px;
+	border-bottom: 0px dotted #6D36FF;
+	/*color: #DADFFF;*/
+}
+
+.top-menu li a:hover {
+	/*border-bottom: 2px solid #DADFFF;*/
+	margin-bottom: ;
+	border-bottom: 0px solid #6D36FF;
+	transition: ;
+}
+
+/* apparently icons must be positioned absolute to relative parent div for animation */
+.social-icons {
+	text-align: ;
+	position: relative;
+	background-color: ;
+	margin: 1.5rem 0 0 1rem;
+}
+
+
+.socIcon {
+	position: absolute;
+	top: 0px;
+	transition: 0.1s;
+}
+
+
+.social-icons li {
+	padding-right: 40px;
+}
+
+.social-icons li a {
+	color: #1F1F1F;
+}
+
+.social-icons li a:hover {
+	color: #6D36FF;
+	transition: ;
+}
+
+.center {
+	text-align: center;
+}
+
+.fab {
+	font-size: 20px;
+
+}
+
+
+
+/*
+// DESKTOP
+*/
+
+@media only screen and (min-width: 1000px) {
+body {
+	background-color: #CFE3E9;
+}
+.wrapper {
+	max-width: 50%;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas:
+	"aside section"
+	". nav";
+}
+
+nav {
+	padding-top: 20px; /* perfect - does not move main container */
+}
+
+aside {
+	display: block;
+	text-align: center; /* pushes image to the right; white space on left */
+	grid-area: aside;
+}
+
+/* I could also use 1 col. and float img to left and text to right */
+.logo {
+	max-width: 30%;
+}
+
+h1 {
+	background-color: ;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #585858;
+	margin: 0 0 0 0;
+	/*padding: 0 0 10px 0;*/
+}
+
+.name {
+	font-weight: 400;
+	color: #585858;
+}
+
+p {
+	color: #878787;
+	font-size: 1rem;
+	font-weight: 300;;
+	line-height: 30px;
+	margin: 20px 120px 0px 0;
+}
+
+i {
+	font-style: italic;
+}
+
+ul {
+
+}
+
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+.top-menu {
+	margin: 0 0 0 0;
+	background-color: ;
+	text-align: left; /* centers the nav bar */
+	/*margin: 25px 0px -25px 0px; /* if you increase bottom, you must decrease top */
+}
+
+
+.top-menu li {
+	padding-right: 5em;
+}
+
+.top-menu li a {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: ;
+	color: #457A8C;
+	padding-bottom: 6px;
+	border-bottom: 0px dotted #6D36FF;
+}
+
+.top-menu li a:hover {
+	color: #DF7C6A;
+	/*border-bottom: 2px solid #DADFFF;*/
+	margin-bottom: ;
+	border-bottom: 0px solid #6D36FF;
+	transition: 0.4s;
+}
+
+/* apparently icons must be positioned absolute to relative parent div for animation */
+.social-icons {
+	position: relative;
+	background-color: ;
+	margin: 20px 0 0 0;
+}
+
+
+.socIcon {
+	position: absolute;
+	top: 0px;
+transition: 0.1s;
+}
+
+
+.social-icons li {
+	padding-right: 40px;
+}
+
+.social-icons li a {
+	color: #FFF6E1;
+}
+
+.social-icons li a:hover {
+	color: #FFE3A1;
+	transition: ;
+}
+
+.center {
+	text-align: center;
+}
+
+.fab {
+	font-size: 20px;
+
+}
+}
