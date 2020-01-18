@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>MySQL DB Test</title>
+</head>
+<body>
+<?php
+phpinfo();
+</body>
+</html>
