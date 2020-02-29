@@ -6,7 +6,7 @@
  
 $dbHost = 'localhost';
 $dbUser = 'root';
-$dbPass = '!Supernova4k';
+$dbPass = ''; // space explosion ! _ 4k
 $dbName = "test";
 $conn = mysqli_connect($dbHost,$dbUser,$dbPass,$dbName);
 
